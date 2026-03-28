@@ -21,8 +21,8 @@ public class JWTHelper {
 	// Token validity in seconds
 	private final static long JWT_TOKEN_VALIDITY = 5 * 60 * 60;
 	private final static String TEST_STRING = "DEMO STRING2";
-	private final static String TEST_STRING_NEW = "NEW DEMO STRING";
-	private String secret = "adafssdfasasfasfsadfsdjfhsafdhsafdthsafthfdgsafdashdfsahfdjsafdhjasfhdfasjfdhjasfdjahsfdsahjfdjsafdjashfdhjasfdjyasfdjysadgjyadadhgaffhgdfafdhafdfahfdhafhgfdghafdhafdjfafdgafdghsfgffdshgfdahafdhaffdsfhsfdhafhfafhfdaghffdahfgfsdfhsffahfafdhfsdhafdgh";
+	private final static String TEST_STRING_NEW = "NEW DEMO STRING2";
+	private String secret = "Hiadafssdfasasfasfsadfsdjfhsafdhsafdthsafthfdgsafdashdfsahfdjsafdhjasfhdfasjfdhjasfdjahsfdsahjfdjsafdjashfdhjasfdjyasfdjysadgjyadadhgaffhgdfafdhafdfahfdhafhgfdghafdhafdjfafdgafdghsfgffdshgfdahafdhaffdsfhsfdhafhfafhfdaghffdahfgfsdfhsffahfafdhfsdhafdgh";
 	private SecretKey secretKey = Keys.hmacShaKeyFor(Decoders.BASE64.decode(secret));
 
 	public String getUserNameFromToken(String token) {
