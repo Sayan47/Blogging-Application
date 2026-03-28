@@ -18,7 +18,7 @@ import io.jsonwebtoken.security.Keys;
 @Component
 public class JWTHelper {
 
-	// Token validity in seconds
+	// Token validity in seconds ===
 	private final static long JWT_TOKEN_VALIDITY = 5 * 60 * 60;
 	private final static String TEST_STRING = "DEMO STRING3";
 	private final static String TEST_STRING_NEW = "NEW DEMO STRING3";
