@@ -21,8 +21,8 @@ public class JWTHelper {
 	// Token validity in seconds === ######
 	// Test Comment
 	private final static long JWT_TOKEN_VALIDITY = 5 * 60 * 60;
-	private final static String TEST_STRING = "DEMO STRING33";
-	private final static String TEST_STRING_NEW = "NEW DEMO STRING33";
+	private final static String TEST_STRING = "DEMO STRING";
+	private final static String TEST_STRING_NEW = "NEW DEMO STRING";
 	private String secret = "sdadafssdfasasfasfsadfsdjfhsafdhsafdthsafthfdgsafdashdfsahfdjsafdhjasfhdfasjfdhjasfdjahsfdsahjfdjsafdjashfdhjasfdjyasfdjysadgjyadadhgaffhgdfafdhafdfahfdhafhgfdghafdhafdjfafdgafdghsfgffdshgfdahafdhaffdsfhsfdhafhfafhfdaghffdahfgfsdfhsffahfafdhfsdhafdgh";
 	private SecretKey secretKey = Keys.hmacShaKeyFor(Decoders.BASE64.decode(secret));
 
