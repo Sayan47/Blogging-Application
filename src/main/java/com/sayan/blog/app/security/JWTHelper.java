@@ -19,7 +19,7 @@ import io.jsonwebtoken.security.Keys;
 public class JWTHelper {
 
 	// Token validity in seconds
-	// Test Comment =====
+	// Test Comment =====%%
 	// New Comment
 	private final static long JWT_TOKEN_VALIDITY = 5 * 60 * 60;
 	private final static String TEST_STRING = "DEMO STRING";
