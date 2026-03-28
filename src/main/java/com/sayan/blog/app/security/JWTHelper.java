@@ -51,9 +51,10 @@ public class JWTHelper {
 
 	private String doGenerateToken(Map<String, Object> claims, String subject) {
 		return Jwts.builder().claims(claims).subject(subject).issuedAt(new Date(System.currentTimeMillis())
-				
-				)
-				.expiration(new Date(System.currentTimeMillis() + JWT_TOKEN_VALIDITY * 1000)).signWith(secretKey).compact();
+
+		)
+				.expiration(new Date(System.currentTimeMillis() + JWT_TOKEN_VALIDITY * 1000)).signWith(secretKey)
+				.compact();
 	}
 
 	public Boolean validateToken(String token, UserDetails userDetails) {
