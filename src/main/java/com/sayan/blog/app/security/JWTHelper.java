@@ -18,6 +18,7 @@ import io.jsonwebtoken.security.Keys;
 @Component
 public class JWTHelper {
 
+	// Token validity in seconds
 	private final static long JWT_TOKEN_VALIDITY = 5 * 60 * 60;
 	private final static String TEST_STRING = "DEMO STRING";
 	private final static String TEST_STRING_NEW = "NEW DEMO STRING";
@@ -49,7 +50,9 @@ public class JWTHelper {
 	}
 
 	private String doGenerateToken(Map<String, Object> claims, String subject) {
-		return Jwts.builder().claims(claims).subject(subject).issuedAt(new Date(System.currentTimeMillis()))
+		return Jwts.builder().claims(claims).subject(subject).issuedAt(new Date(System.currentTimeMillis())
+				
+				)
 				.expiration(new Date(System.currentTimeMillis() + JWT_TOKEN_VALIDITY * 1000)).signWith(secretKey).compact();
 	}
 
